@@ -1,129 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portofolio – NAMA KAMU</title>
-  <meta name="description" content="Portofolio web sederhana milik NAMA KAMU. Dibuat dengan HTML, CSS, dan sedikit JavaScript." />
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio – kipas angin</title>
+    <meta
+      name="description"
+      content="Portofolio web sederhana milik kipas angin."
+    />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Lewati ke konten</a>
 
-  <header class="site-header" id="home" aria-label="Header">
-    <nav class="nav container" aria-label="Navigasi utama">
-      <a class="brand" href="#home" aria-label="Kembali ke atas">NAMA<span>KAMU</span></a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Buka menu">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
-      <ul id="nav-menu" class="nav-menu">
-        <li><a href="#about">Tentang</a></li>
-        <li><a href="#projects">Proyek</a></li>
-        <li><a href="#contact">Kontak</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="site-header" id="home" aria-label="Header">
+      <nav class="nav container" aria-label="Navigasi utama">
+        <a class="brand" href="#home" aria-label="Kembali ke atas"
+          >kipas<span>angin</span></a
+        >
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Buka menu"
+        >
+          <span class="bar"></span><span class="bar"></span
+          ><span class="bar"></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main id="main">
-    <section class="hero container">
-      <div class="hero-text">
-        <h1>Halo 👋, saya <span class="accent">NAMA KAMU</span></h1>
-        <p class="lead">Mahasiswa Teknik Komputer semester 3. Suka ngulik web dan jaringan. Ini portofolio pertama saya yang simpel tapi rapi.</p>
-        <div class="hero-cta">
-          <a class="btn" href="#projects">Lihat Proyek</a>
-          <a class="btn btn-secondary" href="assets/CV.pdf" target="_blank" rel="noopener">Lihat CV</a>
+    <main id="main">
+      <section class="hero container">
+        <div class="hero-text">
+          <h1>Halo 👋, saya <span class="accent">kipas angin</span></h1>
+          <p class="lead">maba sem 3 yg lg stress ngelaprak</p>
+          <div class="hero-cta">
+            <a class="btn" href="#projects">Lihat Proyek</a>
+            <a
+              class="btn btn-secondary"
+              href="assets/CV.pdf"
+              target="_blank"
+              rel="noopener"
+              >Lihat CV</a
+            >
+          </div>
         </div>
-      </div>
-      <figure class="hero-media">
-        <img src="images/profil.svg" alt="Ilustrasi wajah NAMA KAMU" width="320" height="320" />
-      </figure>
-    </section>
+        <figure class="hero-media">
+          <img
+            src="images/profil.svg"
+            alt="Ilustrasi wajah kipas angin"
+            width="320"
+            height="320"
+          />
+        </figure>
+      </section>
 
-    <section class="about container" id="about" aria-labelledby="about-title">
-      <h2 id="about-title">Tentang Saya</h2>
-      <div class="about-grid">
+      <section class="about container" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">Tentang Saya</h2>
+        <div class="about-grid">
+          <p>gtw lg nyoba aja.</p>
+          <ul class="tags" aria-label="Keahlian">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript dasar</li>
+            <li>Git & GitHub</li>
+            <li>Responsive Design</li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="projects container"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <h2 id="projects-title">Proyek</h2>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-body">
+              <h3>Color Flipper</h3>
+              <p>
+                Aplikasi mini untuk mengacak warna latar dan menyalin kode
+                warnanya.
+              </p>
+              <ul class="badges">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+              </ul>
+              <div class="card-actions">
+                <a
+                  class="btn btn-small"
+                  href="projects/color-flipper/index.html"
+                  >Demo</a
+                >
+                <a
+                  class="btn btn-small btn-secondary"
+                  href="https://github.com/kipasangin-1/REPO"
+                  target="_blank"
+                  rel="noopener"
+                  >Kode</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body">
+              <h3>Kartu Profil</h3>
+              <p>
+                Komponen kartu profil sederhana dengan foto, nama, dan tombol.
+              </p>
+              <ul class="badges">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <div class="card-actions">
+                <a class="btn btn-small" href="projects/profile-card/index.html"
+                  >Demo</a
+                >
+                <a
+                  class="btn btn-small btn-secondary"
+                  href="https://github.com/kipasangin-1/REPO"
+                  target="_blank"
+                  rel="noopener"
+                  >Kode</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="contact container"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <h2 id="contact-title">Kontak</h2>
         <p>
-          Saya lagi belajar <strong>HTML</strong>, <strong>CSS</strong>, dan <strong>JavaScript</strong>. Target: jadi jago bikin web yang responsif dan enak dipakai.
-          Di kampus saya biasa pakai VS Code. Portofolio ini dibuat dalam 2 minggu.
+          Kirim email langsung dari sini. Tidak perlu backend, akan buka
+          aplikasi email kamu.
         </p>
-        <ul class="tags" aria-label="Keahlian">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript dasar</li>
-          <li>Git & GitHub</li>
-          <li>Responsive Design</li>
+
+        <form class="contact-form" id="contact-form">
+          <div class="field">
+            <label for="name">Nama</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="kipas angin"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="email@contoh.com"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="message">Pesan</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Halo..."
+            ></textarea>
+          </div>
+          <button class="btn" type="submit">Kirim</button>
+          <p class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>© <span id="year"></span> kipas angin. Dibuat dengan cinta.</p>
+        <ul class="social">
+          <li>
+            <a
+              href="https://github.com/kipasangin-1"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+              >GitHub</a
+            >
+          </li>
         </ul>
       </div>
-    </section>
+    </footer>
 
-    <section class="projects container" id="projects" aria-labelledby="projects-title">
-      <h2 id="projects-title">Proyek</h2>
-
-      <div class="cards">
-        <article class="card">
-          <div class="card-body">
-            <h3>Color Flipper</h3>
-            <p>Aplikasi mini untuk mengacak warna latar dan menyalin kode warnanya.</p>
-            <ul class="badges">
-              <li>HTML</li><li>CSS</li><li>JS</li>
-            </ul>
-            <div class="card-actions">
-              <a class="btn btn-small" href="projects/color-flipper/index.html">Demo</a>
-              <a class="btn btn-small btn-secondary" href="https://github.com/USERNAME/REPO" target="_blank" rel="noopener">Kode</a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card-body">
-            <h3>Kartu Profil</h3>
-            <p>Komponen kartu profil sederhana dengan foto, nama, dan tombol.</p>
-            <ul class="badges">
-              <li>HTML</li><li>CSS</li>
-            </ul>
-            <div class="card-actions">
-              <a class="btn btn-small" href="projects/profile-card/index.html">Demo</a>
-              <a class="btn btn-small btn-secondary" href="https://github.com/USERNAME/REPO" target="_blank" rel="noopener">Kode</a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="contact container" id="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Kontak</h2>
-      <p>Kirim email langsung dari sini. Tidak perlu backend, akan buka aplikasi email kamu.</p>
-
-      <form class="contact-form" id="contact-form">
-        <div class="field">
-          <label for="name">Nama</label>
-          <input id="name" name="name" type="text" placeholder="Nama kamu" required>
-        </div>
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="email@contoh.com" required>
-        </div>
-        <div class="field">
-          <label for="message">Pesan</label>
-          <textarea id="message" name="message" rows="4" placeholder="Halo..."></textarea>
-        </div>
-        <button class="btn" type="submit">Kirim</button>
-        <p class="form-msg" role="status" aria-live="polite"></p>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <p>© <span id="year"></span> NAMA KAMU. Dibuat dengan cinta dan VS Code.</p>
-      <ul class="social">
-        <li><a href="https://github.com/USERNAME" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
