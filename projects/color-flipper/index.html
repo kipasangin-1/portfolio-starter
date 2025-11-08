@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Color Flipper</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <style> body { padding: 2rem; } .box { height: 200px; border-radius: 12px; border: 1px solid var(--border); display: grid; place-items: center; margin: 1rem 0; } .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; } </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Color Flipper</h1>
+    <p class="lead">Klik tombol untuk acak warna latar. Klik kode warna untuk salin.</p>
+    <div class="box" id="color-box"><span id="code" class="mono">#0f1222</span></div>
+    <button class="btn" id="btn">Acak</button>
+    <a class="btn btn-secondary" href="../../index.html">← Kembali</a>
+  </div>
+  <script>
+    const btn = document.getElementById('btn');
+    const box = document.getElementById('color-box');
+    const code = document.getElementById('code');
+    function rand() { return Math.floor(Math.random()*256); }
+    function toHex(n){ return n.toString(16).padStart(2,'0'); }
+    function randomHex(){ return '#' + toHex(rand()) + toHex(rand()) + toHex(rand()); }
+    btn.addEventListener('click', () => {
+      const c = randomHex();
+      box.style.background = c;
+      code.textContent = c;
+    });
+    code.addEventListener('click', async () => {
+      try { await navigator.clipboard.writeText(code.textContent); code.textContent += ' ✓'; }
+      catch(e){ /* ignore */ }
+    });
+  </script>
+</body>
+</html>
